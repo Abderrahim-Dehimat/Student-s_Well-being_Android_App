@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_clair"
+    tools:context=".CitationFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/teal200"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="85dp"
+
+            android:orientation="vertical"
+            android:background="@color/teal200"
+            tools:context=".SecondActivity">
+
+
+            <TextView
+                android:id="@+id/logInTxt"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="9sp"
+                android:fontFamily="@font/dancing_bold"
+                android:paddingBottom="10dp"
+                android:text="Citations"
+                android:textColor="@color/white"
+                android:textSize="47sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L'échec est simplement l'opportunité de recommencer, mais cette fois, plus intelligemment."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/green_clair"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="298dp"
+                        android:layout_height="wrap_content"
+                        android:text=" Le chemin vers le succès et la réussite est pavé d'efforts, de détermination et de persévérance."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="La clé de la réussite est de se concentrer sur les objectifs, de ne pas s'inquiéter de ce qui peut arriver et de se concentrer sur ce qu'il faut faire"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/green_clair"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Light_Green_50"
+                    android:padding="10dp">
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vous êtes plus fort que vous ne le pensez, plus talentueux que vous ne le savez, et plus capable que vous ne l'avez jamais imaginé."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Light_Green_50"
+                    android:padding="10dp">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ne doutez jamais que vous êtes capable de changer le monde. En fait, c'est la seule chose qui se soit jamais produite."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/green_clair"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Light_Green_50"
+                    android:padding="10dp">
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView119"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vous êtes plus fort que vous ne le pensez, plus talentueux que vous ne le savez, et plus capable que vous ne l'avez jamais imaginé."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textVieew44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L'échec est simplement l'opportunité de recommencer, mais cette fois, plus intelligemment."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/texetView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L'échec est simplement l'opportunité de recommencer, mais cette fois, plus intelligemment."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Light_Green_50"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/teextView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L'échec est simplement l'opportunité de recommencer, mais cette fois, plus intelligemment."
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StatistiqueFragment">
+    <!-- Stress -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/dm_bold"
+        android:text="Statistique de la semaine"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/legend_stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginTop="49dp">
+
+    </LinearLayout>
+    <!-- Tristesse -->
+    <LinearLayout
+        android:id="@+id/legend_tristesse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/legend_stress"
+        app:layout_constraintTop_toTopOf="@+id/legend_stress"
+        android:layout_marginStart="60dp">
+    </LinearLayout>
+    <!-- Réussite -->
+    <LinearLayout
+        android:id="@+id/legend_reussite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/legend_stress"
+        app:layout_constraintTop_toBottomOf="@+id/legend_stress"
+        android:layout_marginTop="16dp">
+    </LinearLayout>
+    <!-- Bien-être -->
+    <LinearLayout
+        android:id="@+id/legend_bienetre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/legend_reussite"
+        app:layout_constraintTop_toTopOf="@+id/legend_reussite"
+        android:layout_marginStart="50dp">
+    </LinearLayout>
+
+    <org.eazegraph.lib.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.411" />
+    <!-- Button -->
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=""
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_chart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

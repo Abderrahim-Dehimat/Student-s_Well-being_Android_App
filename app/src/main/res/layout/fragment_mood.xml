@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/teal200">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teal200">
+
+            <!-- CardView pour la première question -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sur_une_chelle_de_1_10_comment_valueriez_vous_votre_niveau_de_stress_actuel"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/slider_desc"
+                        android:value="2.0"
+                        android:valueFrom="0.0"
+                        android:stepSize="1.0"
+                        android:valueTo="10" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView pour la deuxième question -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+
+                    <TextView
+                        android:id="@+id/question2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avez-vous eu des difficultés à dormir récemment ?"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+
+                    <RadioGroup
+                        android:id="@+id/answersGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radioButton21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="oui"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                        <RadioButton
+                            android:id="@+id/radioButton22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="non"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+                    <TextView
+                        android:id="@+id/question3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trouvez-vous du temps pour des activités qui vous rendent heureux/se ?"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+                    <RadioGroup
+                        android:id="@+id/answersGroup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Add RadioButton for each option, 1 through 10 -->
+                        <!-- Example for 1 -->
+                        <RadioButton
+                            android:id="@+id/radioButton31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="oui"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                        <!-- Repeat for 2-10 -->
+                        <RadioButton
+                            android:id="@+id/radioButton32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="non"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+                    <TextView
+                        android:id="@+id/question4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ressentez-vous de la fatigue ou du manque d'énergie la plupart du temps ?"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+                    <RadioGroup
+                        android:id="@+id/answersGroup4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Add RadioButton for each option, 1 through 10 -->
+                        <!-- Example for 1 -->
+                        <RadioButton
+                            android:id="@+id/radioButton41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="oui"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                        <!-- Repeat for 2-10 -->
+                        <RadioButton
+                            android:id="@+id/radioButton42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="non"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+                    <TextView
+                        android:id="@+id/question5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Combien de fois par semaine faites-vous de l'exercice ou une activité physique ?"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+                    <RadioGroup
+                        android:id="@+id/answersGroup5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Add RadioButton for each option, 1 through 10 -->
+                        <!-- Example for 1 -->
+                        <RadioButton
+                            android:id="@+id/radioButton51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                        <!-- Repeat for 2-10 -->
+                        <RadioButton
+                            android:id="@+id/radioButton52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 - 2 fois"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                        <RadioButton
+                            android:id="@+id/radioButton53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="plus que 2 fois"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/cardview_dark_background"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/Light_Green_50">
+                    <TextView
+                        android:id="@+id/question6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avez-vous récemment vécu un événement qui a eu un impact négatif sur votre santé mentale ?"
+                        android:padding="8dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:fontFamily="@font/dm_medium"/>
+                    <RadioGroup
+                        android:id="@+id/answersGroup6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Add RadioButton for each option, 1 through 10 -->
+                        <!-- Example for 1 -->
+                        <RadioButton
+                            android:id="@+id/radioButton61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="oui"
+                            android:textColor="@color/cardview_dark_background"
+                            android:buttonTint="@color/black"
+                            />
+                        <!-- Repeat for 2-10 -->
+                        <RadioButton
+                            android:id="@+id/radioButton62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="non"
+                            android:textColor="@color/black"
+                            android:buttonTint="@color/black" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Répétez la structure CardView pour les questions suivantes -->
+            <Button
+                android:id="@+id/envoyer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="@color/btn_color"
+                android:text="Envoyé"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/dm_medium"
+                android:textAllCaps="true">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

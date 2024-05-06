@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HappyU App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sur_une_chelle_de_1_10_comment_valueriez_vous_votre_niveau_de_stress_actuel">Sur une échelle de 1 à 10, comment évalueriez-vous votre niveau de stress actuel ?</string>
+    <string name="slider_desc" />
+</resources>
